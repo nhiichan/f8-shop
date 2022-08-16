@@ -1,0 +1,39 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* 
+        Đa phần các trình duyệt thì mặc định là 16px 
+        Thì sau này có thể sử dụng rem
+        Thì giờ để 62.5% -> 1 rem sẽ là 10px luôn 
+        => HACK
+    */
+    font-size: 62.5%;
+    line-height: 1.6rem; /* 16px */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 120px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    /* Nằm cùng trên một hàng ngang, quá dài tự động nhảy xuống */
+    display: flex;
+    flex-wrap: wrap;
+}
+
